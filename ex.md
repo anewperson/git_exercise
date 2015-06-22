@@ -8,7 +8,7 @@ Basics
 
 Whenever we start a new project from scratch or have an existing project and just want to turn it into a repository.
 
-1. Create and \ or navigate the command line to the folder you want initialized.
+1. Create and / or navigate the command line to the folder you want initialized.
 
 2. Initialize a new repo.
 
@@ -65,7 +65,7 @@ How to tell git to ignore certain files, like build artifacts, temporary backup 
 
 ### Initializing a local repo
 
-1. Create and \ or navigate the command line to the folder you want initialized.   
+1. Create and / or navigate the command line to the folder you want initialized.   
 2. Initialize a new repo.
 	```
 	mkdir my_new_repo
