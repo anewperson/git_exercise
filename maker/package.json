@@ -1,0 +1,13 @@
+{
+  "name": "maker",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "make": "shjs make.sh.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^0.3.3"
+  }
+}
