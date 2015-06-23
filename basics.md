@@ -1,8 +1,8 @@
 Git Exercise
 ============
 
-Basics
-------
+Basics with Console
+-------------------
 
 ### Initializing a local repo
 
@@ -16,15 +16,6 @@ Whenever we start a new project from scratch or have an existing project and jus
     You can use `echo Hello_World>> new_file.txt` to quickly create a new file.
 
 4. Stage (add it to the index) and commit it.
-
-### Cloning a repo
-
-Whenever we have a remote repository that we'd like to have a copy of, and possibly start uploading changes to.
-
-1. Clone this remote repository:  
-    `https://github.com/mastern2k3/git_exercise.git`
-
-2. Create, stage and commit a new file locally.
 
 ### Branches, creating and swiching
 
@@ -78,6 +69,7 @@ How to tell git to ignore certain files, like build artifacts, temporary backup 
 	git init my_new_repo
 	cd my_new_repo
 	```
+	
 3. Create a new file.  
 	```
 	echo Hello_World>> new_file.txt
@@ -91,28 +83,7 @@ How to tell git to ignore certain files, like build artifacts, temporary backup 
 	
 	git commit
 	```
-   
-### Cloning a repo
 
-1. Clone this remote repository:  
-    `https://github.com/mastern2k3/git_exercise.git`
-	```
-	git clone https://github.com/mastern2k3/git_exercise.git
-	
-	cd git_exercise
-	```
-	
-2. Create, stage and commit a new file locally.
-	```
-	echo Hello_World>> new_file.txt
-	
-	git add new_file.txt
-	
-	git status
-	
-	git commit
-	```
-	
 ### Branches, creating and swiching
 
 1. Navigate the command line to the repo folder.
