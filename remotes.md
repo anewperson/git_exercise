@@ -3,7 +3,33 @@ Working with Remotes
 --------------------
 
 For this exercise you're going to need a repo with write permissions, so in case you have one use it.
-If not, in the next paragraph I'll show you how to fork the one I created in GitHub so you could write to it.
+If not, in the last page I'll show you how to fork the one I created in GitHub so you could write to it.
+
+### Cloning a remote repo and pushing changes
+
+1. Clone your remote repository as you did in the branches, only now - **use your own**:  
+    `https://github.com/<your_username_here>/git_exercise.git`
+
+    ![cloning](clone_window.png)
+
+2. Create, stage and commit a new file.
+
+3. Push those changes to the originating repo,  
+    Use "Commands" -> "Push..." *(available also from the toolbar)*.
+
+    ![pushing](push_window.png)
+
+4. Depending on the remote repo you'll be prompted for different information but the end result should look something like this:
+
+    ![pushing done](push_complete.png)
+
+### Pulling new changes from a remote repo
+
+Whenever the remote repo has progressed beyond our local clone.
+
+1. Open the
+
+-------------------------------
 
 ### Forking a GitHub repo
 
@@ -20,15 +46,3 @@ If not, in the next paragraph I'll show you how to fork the one I created in Git
     Should look something like this: `https://github.com/anewperson/git_exercise.git`.
 
 4. That's it! Now you have your own copy and you are ready to push changes to it.
-
-### Cloning a remote repo and committing changes
-
-1. Clone your remote repository as you did in the branches, only now - **use your own**:  
-    `https://github.com/<your_username_here>/git_exercise.git`
-
-    ![cloning](clone_window.png)
-
-2. Create, stage and commit a new file.
-
-3. Push those changes to the originating repo.  
-    use
