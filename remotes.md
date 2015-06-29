@@ -27,7 +27,20 @@ If not, in the last page I'll show you how to fork the one I created in GitHub s
 
 Whenever the remote repo has progressed beyond our local clone.
 
-1. Open the
+1. Open the clone repo.
+
+2. Pull the new changes from the origin remote,  
+    Use "Commands" -> "Pull..." *(available also from the toolbar)*.
+
+    ![pulling](pulling.png)
+
+    Notice the two merge options (Merge and Rebase), they correspond with the action git will take when it detects changes in the clone you made and the origin repo.
+
+    Depending on the team's preference you should choose one or the other, usually Rebase is picked.
+
+3. The end result should look something like this:
+
+    ![pulling done](pull_done.png)
 
 -------------------------------
 
