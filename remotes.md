@@ -1,68 +1,22 @@
+
 Working with Remotes
 --------------------
 
-### Cloning a remote repo and making off-site changes
+For this exercise you're going to need a repo with write permissions, so in case you have one use it.
+If not, in the next paragraph I'll show you how to fork the one I created in github so you could write to it.
 
-Whenever we have a remote repository that we'd like to have a copy of, and possibly start uploading changes to.
+### Forking a github repo
 
-1. Clone this remote repository:  
-    `https://github.com/mastern2k3/git_exercise.git`
+1. Create an account in [GitHub](https://github.com/).
 
-    ![cloning](clone_window.png)
-    
-2. Create a new branch called `my_branch`,  
-    Use "Commands" -> "Create Branch..."
-    
-    ![create branch](create_branch.png)
-    
-3. Create, stage and commit a new file to `my_branch`.
+2. Browse to https://github.com/mastern2k3/git_exercise and fork my repo:
 
-### Rebasing my branch back on top of the `master` branch
+	![Forking a repo](forking_github.png)
 
-Whenever the main branch has progressed after our feature branch and we want to make
-it consistant with the latest changes.
+3. Now that you have your own repo, you can use the http link below to upload changes:
 
-1. Use the same repo from the previous exercise.
+	![Get the fork URL](fork_url.png)
 
-2. Switch back to the `master` branch,  
-    *Notice the file we created earlier disappeared?*
-    Use "Commands" -> "Checkout branch..."
-    
-    ![create branch](switch_branch.png)
-    
-    Or just use the dropbox from the tool bar
-    
-3. Create, stage and commit a new file to `master`.
-    
-    ![branch is rooted behind the `master`](master_change.png)
+	Should look something like this: `https://github.com/anewperson/git_exercise.git`
 
-    Now the `my_branch` branch is rooted behind the `master` branch.
-    
-4. Switch back to the `my_branch` branch.
-
-5. Rebase it back on top of the `master` branch.
-    
-    ![rebasing `my_branch`](rebase.png)
-    
-6. Now the commits are neatly ordered.
-    
-    ![rebasing `my_branch`](rebase_passed.png)
-    
-### Merging off-site changes back into the `master` branch
-
-When we're done working and we'd like to merge new commits back into the originating branch.
-
-1. Use the same repo from the previous exercise.
-
-2. Switch to the branch we want to **merge changes into** (`master`).
-
-3. Merge `my_branch` back into `master`,  
-    Use "Commands" -> "Merge branches..."
-    
-    ![merging `my_branch`](merge_branch.png)
-
-4. Now `master` is aligned back togather with the new commits from `my_branch`.
-
-    ![merging `my_branch`](after_merge.png)
-    
-    
+4. That's it! Now you have your own copy and you are ready to push changes to it.
