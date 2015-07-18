@@ -44,6 +44,14 @@ Whenever the remote repo has progressed beyond our local clone.
 
 -------------------------------
 
+### Forking a Stash repo
+
+1. Log in using your Stash account.
+
+2. ???
+
+3. Profit!!
+
 ### Forking a GitHub repo
 
 1. Create an account in [GitHub](https://github.com/).
