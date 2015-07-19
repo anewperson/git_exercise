@@ -49,6 +49,8 @@ For whenever we need to fetch new changes that exist in the submodule's remote r
 2. Open the repo's submodules window  
     Use "Repository" -> "Submodules..."
 
-    ![Submodule pull](submodules.png)
-
 3. Use the pull button on the submodule we created earlier.
+
+    ![Submodule pull](submodule_pull.png)
+
+4. After the pull commit the new changes.

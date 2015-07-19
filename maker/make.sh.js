@@ -11,8 +11,8 @@ sh.mkdir('../html');
 sh.cp('-f', statics, '../html');
 
 sh.find('..')
-    .filter(function (filename) { return file.match(/\.md$/); })
-    .filter(function (filename) { return !file.match(/node_modules/); })
+    .filter(function (filename) { return filename.match(/\.md$/); })
+    .filter(function (filename) { return !filename.match(/node_modules/); })
     .forEach(function (filename) {
 
         console.info("compiling " + filename);
