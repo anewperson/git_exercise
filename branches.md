@@ -9,12 +9,12 @@ Whenever we have a remote repository that we'd like to have a copy of, and possi
 1. Clone this remote repository:  
     `https://github.com/mastern2k3/git_exercise.git`
 
-    ![cloning](clone_window.png)
+    ![cloning](images/clone_window.png)
 
 2. Create a new branch called `my_branch`,  
     Use "Commands" -> "Create Branch..."
 
-    ![create branch](create_branch.png)
+    ![create branch](images/create_branch.png)
 
 3. Create, stage and commit a new file to `my_branch`.
 
@@ -29,13 +29,13 @@ it consistent with the latest changes.
     *Notice the file we created earlier disappeared?*  
     Use "Commands" -> "Checkout branch..."
 
-    ![create branch](switch_branch.png)
+    ![create branch](images/switch_branch.png)
 
     Or just use the dropbox from the tool bar
 
 3. Create, stage and commit a new file to `master`.
 
-    ![branch is rooted behind the `master`](master_change.png)
+    ![branch is rooted behind the `master`](images/master_change.png)
 
     Now the `my_branch` branch is rooted behind the `master` branch.
 
@@ -43,11 +43,11 @@ it consistent with the latest changes.
 
 5. Rebase it back on top of the `master` branch.
 
-    ![rebasing `my_branch`](rebase.png)
+    ![rebasing `my_branch`](images/rebase.png)
 
 6. Now the commits are neatly ordered.
 
-    ![rebasing `my_branch`](rebase_passed.png)
+    ![rebasing `my_branch`](images/rebase_passed.png)
 
 ### Merging off-site changes back into the `master` branch
 
@@ -60,8 +60,8 @@ When we're done working and we'd like to merge new commits back into the origina
 3. Merge `my_branch` back into `master`,  
     Use "Commands" -> "Merge branches..."
 
-    ![merging `my_branch`](merge_branch.png)
+    ![merging `my_branch`](images/merge_branch.png)
 
 4. Now `master` is aligned back together with the new commits from `my_branch`.
 
-    ![merging `my_branch`](after_merge.png)
+    ![merging `my_branch`](images/after_merge.png)
