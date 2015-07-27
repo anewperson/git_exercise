@@ -19,24 +19,6 @@ Fixing Mistakes
 
 2. Repeat until you find the buggy commit.
 
-### Using cherry picking
-
-1. Clone the exercise repo.
-
-2. Create a new branch at the top of the master branch called `in_process`.
-
-3. Switch to `in_process` branch.
-
-4. Create 6 files making 6 commits to that branch.
-
-5. Switch back to the `master` branch.
-
-6. Cherry pick the top 3 commits.
-
-7. Commit the new changes.
-
-8. Delete (force) the `in_process` branch.
-
 ### Using patches
 
 1. Clone the exercise repo (yes again ☺).
