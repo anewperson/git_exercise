@@ -25,7 +25,10 @@ Whenever we start a new project from scratch or have an existing project and jus
 
 Given an existing repository, creating a new feature branch, switching to and working on it.
 
-1. Create a new branch called `cool_new_feature`.
+1. Create a new branch called `cool_new_feature`,  
+    Use "Commands" -> "Create Branch..."
+
+    ![create branch](images/create_branch.png)
 
 2. Switch to that branch (make sure you have no unstaged changes).  
 	*Swithing branches while having unstaged changes will keep those changes after switching by default.*
