@@ -10,9 +10,9 @@ First lets see how the join merge solution looks like.
 
 1. Clone the `branches` repo.
 
-2. Merge the `feature_1` branch into `master`.
+2. Merge the `feature_2` branch into `master`.
 
-3. Merge the `feature_2` branch into `master`.
+3. Merge the `feature_1` branch into `master`.
 
 4. Notice how the commit log looks like right now?
 
