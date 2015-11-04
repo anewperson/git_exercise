@@ -61,8 +61,10 @@ Whenever we are done making changes to our fork and would like to suggest them t
     `http://localhost:7990/projects/<project code>/repos/<repo name>`.
 
 3. Click fork and fork the repo under your user.
-
-4. Now you can use the forked repo to make off-site changes.
+    
+    ![pulling done](images/fork_stash.png)
+    
+4. Now you can clone the forked repo to make off-site changes.
 
 ### Forking a GitHub repo
 
