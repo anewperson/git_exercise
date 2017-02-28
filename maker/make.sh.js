@@ -11,11 +11,11 @@ sh.mkdir('../html');
 sh.cp('-f', statics, '../html');
 
 sh.find('..')
-    .filter(function (file) { return file.match(/\.md$/); })
-    .filter(function (file) { return !file.match(/node_modules/); })
-    .forEach(function (file) {
+    .filter(function (filename) { return filename.match(/\.md$/); })
+    .filter(function (filename) { return !filename.match(/node_modules/); })
+    .forEach(function (filename) {
 
-        console.info("compiling " + file);
+        console.info("compiling " + filename);
 
-        sh.sed('{{markdown_content}}', marked(sh.cat(file)), templateFile).to('../html/' + path.basename(file) + '.html');
+        sh.sed('{{markdown_content}}', marked(sh.cat(filename)), templateFile).to('../html/' + path.basename(filename) + '.html');
     });

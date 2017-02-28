@@ -1,68 +1,83 @@
+
 Working with Remotes
 --------------------
 
-### Cloning a remote repo and making off-site changes
+For this exercise you're going to need a repo with write permissions, so in case you have one use it.
+If not, in the last page I'll show you how to fork the one I created in GitHub so you could write to it.
 
-Whenever we have a remote repository that we'd like to have a copy of, and possibly start uploading changes to.
+### Cloning a remote repo and pushing changes
 
-1. Clone this remote repository:  
-    `https://github.com/mastern2k3/git_exercise.git`
+1. Clone your remote repository as you did in the branches, only now - **use your own**:  
+    `https://github.com/<your_username_here>/git_exercise.git`
 
-    ![cloning](clone_window.png)
-    
-2. Create a new branch called `my_branch`,  
-    Use "Commands" -> "Create Branch..."
-    
-    ![create branch](create_branch.png)
-    
-3. Create, stage and commit a new file to `my_branch`.
+    ![cloning](images/clone_window.png)
 
-### Rebasing my branch back on top of the `master` branch
+2. Create, stage and commit a new file.
 
-Whenever the main branch has progressed after our feature branch and we want to make
-it consistant with the latest changes.
+3. Push those changes to the originating repo,  
+    Use "Commands" -> "Push..." *(available also from the toolbar)*.
 
-1. Use the same repo from the previous exercise.
+    ![pushing](images/push_window.png)
 
-2. Switch back to the `master` branch,  
-    *Notice the file we created earlier disappeared?*
-    Use "Commands" -> "Checkout branch..."
-    
-    ![create branch](switch_branch.png)
-    
-    Or just use the dropbox from the tool bar
-    
-3. Create, stage and commit a new file to `master`.
-    
-    ![branch is rooted behind the `master`](master_change.png)
+4. Depending on the remote repo you'll be prompted for different information but the end result should look something like this:
 
-    Now the `my_branch` branch is rooted behind the `master` branch.
-    
-4. Switch back to the `my_branch` branch.
+    ![pushing done](images/push_complete.png)
 
-5. Rebase it back on top of the `master` branch.
-    
-    ![rebasing `my_branch`](rebase.png)
-    
-6. Now the commits are neatly ordered.
-    
-    ![rebasing `my_branch`](rebase_passed.png)
-    
-### Merging off-site changes back into the `master` branch
+### Pulling new changes from a remote repo
 
-When we're done working and we'd like to merge new commits back into the originating branch.
+Whenever the remote repo has progressed beyond our local clone.
 
-1. Use the same repo from the previous exercise.
+1. Open the clone repo.
 
-2. Switch to the branch we want to **merge changes into** (`master`).
+2. Pull the new changes from the origin remote,  
+    Use "Commands" -> "Pull..." *(available also from the toolbar)*.
 
-3. Merge `my_branch` back into `master`,  
-    Use "Commands" -> "Merge branches..."
+    ![pulling](images/pulling.png)
+
+    Notice the two merge options (Merge and Rebase), they correspond with the action git will take when it detects changes in the clone you made and the origin repo.
+
+    Depending on the team's preference you should choose one or the other, usually Rebase is picked.
+
+3. The end result should look something like this:
+
+    ![pulling done](images/pull_done.png)
+
+### Creating a pull request after pushing new changes
+
+Whenever we are done making changes to our fork and would like to suggest them to the origin repo.
+
+1. Browse to your forked repo.
+
+2. Click Pull Request and select the `master` branch.
+
+-------------------------------
+
+### Forking an Atlassian Stash repo
+
+1. Log in to your stash account.
+
+2. Browse to your source repo page,  
+    Usually looks somewhat like this:  
+    `http://localhost:7990/projects/<project code>/repos/<repo name>`.
+
+3. Click fork and fork the repo under your user.
     
-    ![merging `my_branch`](merge_branch.png)
-
-4. Now `master` is aligned back togather with the new commits from `my_branch`.
-
-    ![merging `my_branch`](after_merge.png)
+    ![pulling done](images/fork_stash.png)
     
-    
+4. Now you can clone the forked repo to make off-site changes.
+
+### Forking a GitHub repo
+
+1. Create an account in [GitHub](https://github.com/).
+
+2. Browse to https://github.com/mastern2k3/git_exercise and fork my repo:
+
+    ![Forking a repo](images/forking_github.png)
+
+3. Now that you have your own repo, you can use the URL below to upload changes:
+
+    ![Get the fork URL](images/fork_url.png)
+
+    Should look something like this: `https://github.com/anewperson/git_exercise.git`.
+
+4. That's it! Now you have your own copy and you are ready to push changes to it.
